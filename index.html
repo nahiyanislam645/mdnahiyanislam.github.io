@@ -9,51 +9,57 @@
 <style>
 
 body{
-background:#0f172a;
-color:white;
-font-family:Arial;
-text-align:center;
-padding:40px;
 margin:0;
+font-family:Arial;
+background:#0b1220;
+color:white;
 }
 
-.box{
-max-width:800px;
+header{
+background:linear-gradient(135deg,#2563eb,#0ea5e9);
+text-align:center;
+padding:50px;
+}
+
+header h1{
+margin:0;
+font-size:45px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+opacity:0.9;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+max-width:900px;
 margin:auto;
-}
-
-h1{
-font-size:48px;
-margin-bottom:10px;
-}
-
-h2{
-margin-top:50px;
-color:#38bdf8;
-}
-
-p{
-font-size:20px;
-line-height:1.8;
-color:#ddd;
+padding:20px;
 }
 
 .card{
-background:#1e293b;
-padding:25px;
+background:#111827;
+padding:20px;
+margin:20px 0;
 border-radius:15px;
-margin-top:25px;
 }
 
-img{
-width:220px;
-border-radius:15px;
-margin-top:15px;
-}
-
-a{
+h2{
 color:#38bdf8;
-text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#0f172a;
 }
 
 </style>
@@ -62,51 +68,71 @@ text-decoration:none;
 
 <body>
 
-<div class="box">
+<header>
 
 <h1>MD Nahiyan Islam</h1>
-
 <p>Medical Student • Traveler • Blogger</p>
 
-<div class="card">
+<nav>
+<a href="#about">Home</a>
+<a href="#notes">Medical Notes</a>
+<a href="#travel">Travel Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<div class="card" id="about">
 
 <h2>About Me</h2>
 
 <p>
-Welcome to my official website 😄
-</p>
-
-<p>
-I am MD Nahiyan Islam.  
-Here I share my medical study notes, travel experiences, photos and personal blogs.
+Welcome 😄<br><br>
+I am MD Nahiyan Islam. I share medical notes, travel experiences and personal blogs.
 </p>
 
 </div>
 
-<div class="card">
+<div class="card" id="notes">
 
 <h2>Medical Notes</h2>
 
 <p>
-This section contains my study notes, medical learning resources and educational content.
+Anatomy, Physiology, Pharmacology and other study materials will be added here.
 </p>
 
 </div>
 
-<div class="card">
+<div class="card" id="travel">
 
 <h2>Travel Gallery</h2>
 
 <p>
-I love traveling to different places and sharing beautiful memories through photos and blogs.
+My travel photos and memories will be uploaded here soon.
 </p>
 
 </div>
 
-<div class="card">
+<div class="card" id="contact">
 
 <h2>Contact</h2>
 
+<p>
+Facebook: 
+<a href="https://facebook.com/mhnahiyanislam">
+MH Nahiyan Islam
+</a>
+</p>
+
+<p>
+Twitter: 
+<a href="https://x.com/MdNahiyanIslam1">
+MdNahiyanIslam1
+</a>
+</p>
+  
 <p>
 GitHub: 
 <a href="https://github.com/nahiyanislam645">
@@ -117,6 +143,10 @@ nahiyanislam645
 </div>
 
 </div>
+
+<footer>
+<p>© 2026 MD Nahiyan Islam</p>
+</footer>
 
 </body>
 </html>
