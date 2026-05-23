@@ -51,20 +51,26 @@ padding:80px 20px;
 }
 
 .hero h1{
-font-size:50px;
+font-size:55px;
 margin:0;
-animation: fadeIn 2s ease-in-out;
+animation: drop 1.2s ease;
 }
 
 .hero p{
 opacity:0.8;
 font-size:18px;
+animation: fadeIn 2s ease;
 }
 
 /* ANIMATION */
+@keyframes drop{
+from{transform:translateY(-40px); opacity:0;}
+to{transform:translateY(0); opacity:1;}
+}
+
 @keyframes fadeIn{
-from{opacity:0; transform:translateY(-20px);}
-to{opacity:1; transform:translateY(0);}
+from{opacity:0;}
+to{opacity:0.8;}
 }
 
 /* CARDS */
@@ -78,19 +84,20 @@ gap:20px;
 }
 
 .card{
-background:rgba(17,24,39,0.9);
+background:rgba(255,255,255,0.05);
+backdrop-filter: blur(10px);
 padding:25px;
-border-radius:15px;
+border-radius:18px;
 text-align:center;
-transition:0.3s;
+transition:0.4s;
 cursor:pointer;
 border:1px solid rgba(255,255,255,0.1);
 }
 
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
-background:#111827;
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 15px 30px rgba(0,0,0,0.5);
+background:rgba(56,189,248,0.15);
 }
 
 .card h3{
@@ -122,8 +129,8 @@ opacity:0.8;
 
 <!-- HERO -->
 <div class="hero">
-<h1>MD Nahiyan Islam</h1>
-<p>MBBS Student • Traveler • Blogger • Medical Learner</p>
+  <h1 class="name">MD Nahiyan Islam</h1>
+  <p class="subtitle">MBBS Student • Traveler • Blogger • Medical Learner</p>
 </div>
 
 <!-- CARDS -->
