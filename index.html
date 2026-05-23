@@ -2,64 +2,87 @@
 <html>
 <head>
 
-<title>MD Nahiyan Islam | Official Website </title>
+<title>MD Nahiyan Islam | Official Website</title>
 
-<meta name="description" content="Official website of MD Nahiyan Islam. Medical notes, travel blogs, photos and personal updates.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#0b1220;
+background:linear-gradient(135deg,#0b1220,#111827);
 color:white;
 }
 
-header{
-background:linear-gradient(135deg,#2563eb,#0ea5e9);
-text-align:center;
-padding:50px;
-}
-
-header h1{
-margin:0;
-font-size:45px;
-}
-
-header p{
-margin-top:10px;
-font-size:18px;
-opacity:0.9;
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:center;
+gap:15px;
+background:#111827;
+padding:15px;
+position:sticky;
+top:0;
 }
 
 nav a{
 color:white;
-margin:10px;
 text-decoration:none;
-font-weight:bold;
+padding:10px 15px;
+background:#1e3a8a;
+border-radius:8px;
+transition:0.3s;
 }
 
+nav a:hover{
+background:#0ea5e9;
+transform:scale(1.05);
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:70px 20px;
+}
+
+.hero h1{
+font-size:45px;
+margin:0;
+}
+
+.hero p{
+opacity:0.8;
+}
+
+/* CARDS */
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
 }
 
 .card{
 background:#111827;
 padding:20px;
-margin:20px 0;
 border-radius:15px;
+text-align:center;
+transition:0.3s;
 }
 
-h2{
-color:#38bdf8;
+.card:hover{
+transform:scale(1.05);
+background:#1e293b;
 }
 
 footer{
 text-align:center;
 padding:20px;
 background:#0f172a;
+margin-top:30px;
 }
 
 </style>
@@ -68,78 +91,38 @@ background:#0f172a;
 
 <body>
 
-<header>
-
-<h1>MD Nahiyan Islam</h1>
-<p>Medical Student • Traveler • Blogger</p>
-
 <nav>
-<a href="#about">Home</a>
-<a href="#notes">Medical Notes</a>
-<a href="#travel">Travel Gallery</a>
-<a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="notes.html">Medical Notes</a>
+<a href="travel-blog.html">Travel Blog</a>
+<a href="contact.html">Contact</a>
 </nav>
 
-</header>
+<div class="hero">
+<h1>MD Nahiyan Islam</h1>
+<p>MBBS Student • Traveler • Blogger • Medical learner</p>
+</div>
 
 <div class="container">
 
-<div class="card" id="about">
-
-<h2>About Me</h2>
-
-<p>
-Welcome 😄<br><br>
-I am MD Nahiyan Islam. I share medical notes, travel experiences and personal blogs.
-</p>
-
+<div class="card">
+<h3>📘 Medical Notes</h3>
+<p>Study materials & learning resources</p>
 </div>
 
-<div class="card" id="notes">
-
-<h2>Medical Notes</h2>
-
-<p>
-Anatomy, Physiology, Pharmacology and other study materials will be added here.
-</p>
-
+<div class="card">
+<h3>✈️ Travel Blog</h3>
+<p>My travel experiences & stories</p>
 </div>
 
-<div class="card" id="travel">
-
-<h2>Travel Gallery</h2>
-
-<p>
-My travel photos and memories will be uploaded here soon.
-</p>
-
+<div class="card">
+<h3>📩 Contact</h3>
+<p>Connect with me easily</p>
 </div>
 
-<div class="card" id="contact">
-
-<h2>Contact</h2>
-
-<p>
-Facebook: 
-<a href="https://facebook.com/mhnahiyanislam">
-MH Nahiyan Islam
-</a>
-</p>
-
-<p>
-Twitter: 
-<a href="https://x.com/MdNahiyanIslam1">
-MdNahiyanIslam1
-</a>
-</p>
-  
-<p>
-GitHub: 
-<a href="https://github.com/nahiyanislam645">
-nahiyanislam645
-</a>
-</p>
-
+<div class="card">
+<h3>🌍 About Me</h3>
+<p>I am MD Nahiyan Islam, an MBBS student,medical learner, traveler, and blogger from Bangladesh. <br> This website is my personal space where I share my medical study notes, travel experiences, and simple thoughts from my journey as a student.</p>
 </div>
 
 </div>
